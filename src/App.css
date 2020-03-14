@@ -1,0 +1,92 @@
+body {
+  background-color: hsl(210, 38%, 97%);
+  font-family: 'Rubik', sans-serif;
+}
+
+.app__header {
+  margin-right: 0.5em;
+  font-size: 2em;
+}
+
+.container {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0.5em auto;
+  padding: 1em;
+  direction: rtl;
+}
+
+.footer {
+  margin: 1em;
+  opacity: 0.5;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-section {
+  padding: 0 1em;
+}
+
+.counter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Counter {
+  background-color: white;
+  padding: 1em 2em;
+  flex: 100px;
+  margin: 0.7em;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  border-radius: 0.4em;
+}
+
+.Counter__name {
+  color: hsl(203, 15%, 47%);
+  font-size: 1rem;
+}
+
+.Counter__total {
+  font-size: 2rem;
+}
+
+.Counter__change-day {
+  font-size: 0.9rem;
+}
+
+.messages {
+  background-color: white;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  border-radius: 0.4em;
+  padding: 0.7em;
+  margin: 0.7em;
+}
+
+.messages-title {
+  font-size: 1.5em;
+  margin-bottom: 0.7em;
+}
+
+.message-row__date {
+  font-weight: bold;
+}
+
+.main-chart {
+  background: white;
+  margin: 0.7em;
+  padding: 0 0.5em;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  border-radius: 0.4em;
+}
+
+.footer-section__link {
+  color: inherit;
+  text-decoration: none;
+}
+.footer-section__link:hover {
+  text-decoration: underline;
+}
+
