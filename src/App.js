@@ -12,7 +12,12 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   
   const formatData = (rawData) => {
-    return rawData.map(({ fields }) => ({ ...fields, date: new Date(fields.date) })
+    return rawData
+      .filter(({ fields }) => fields.date)
+      .map(({ fields }) => ({
+        ...fields,
+        date: new Date(fields.date)
+      })
     )
   }
   
@@ -61,13 +66,14 @@ function App() {
         </div>
       </div>
       <div className="footer">
-        <div className="footer-section section__update-date"><strong>עדכון
+        <div className="footer__section section__update-date"><strong>עדכון
           אחרון: </strong>{lastUpdate}  </div>
         |
-        <div className="footer-section footer__sources"><strong>מקורות:</strong> וויקיפדיה ומשרד
+        <div className="footer__section footer__sources"><strong>מקורות:</strong> וויקיפדיה ומשרד
           הבריאות</div>
         |
-        <div className="footer-section "><a href="https://github.com/itainoam/covid" className="footer-section__link">github</a></div>
+        <div className="footer__section "><a href="https://github.com/itainoam/covid"
+                                             className="footer-section__link">github</a></div>
       </div>
     </div>
   );
